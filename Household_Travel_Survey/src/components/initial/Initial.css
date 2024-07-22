@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.Ward,
+.Enumerator,
+.Date {
+  flex: 1;
+  margin-right: 10px; /* Adjust the spacing between items */
+}
+
+.Ward label,
+.Enumerator label,
+.Date label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.Ward input,
+.Enumerator input,
+.Date input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.Ward input::placeholder,
+.Enumerator input::placeholder,
+.Date input::placeholder {
+  color: #aaa;
+}
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .Ward,
+  .Enumerator,
+  .Date {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add spacing between rows on smaller screens */
+    flex: 1 1 100%; /* Make each item take full width */
+  }
+
+  .header {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px; /* Further adjust padding for very small screens */
+  }
+
+  .Ward input,
+  .Enumerator input,
+  .Date input {
+    padding: 6px; /* Adjust padding for input fields on smaller screens */
+    font-size: 14px; /* Adjust font size for input fields on smaller screens */
+  }
+}

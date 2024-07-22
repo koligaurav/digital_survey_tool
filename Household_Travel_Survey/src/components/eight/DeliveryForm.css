@@ -1,0 +1,47 @@
+/* Global styles */
+.form-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+  justify-content: space-between;
+}
+
+.section {
+  flex: 1 1 100px; /* Flexible width with minimum width */
+  margin-right: 20px;
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.section:last-child {
+  margin-right: 0; /* Remove margin from the last section for cleaner edge */
+}
+
+.section label {
+  font-weight: bold;
+}
+
+.section div {
+  margin: 5px 0;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sections {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+  }
+
+  .section {
+    flex: 1 1 100%; /* Full width for sections on smaller screens */
+    margin-right: 0;
+  }
+}

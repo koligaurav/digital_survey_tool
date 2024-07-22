@@ -1,0 +1,61 @@
+.first {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.second, .fourth {
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-bottom: 5px;
+}
+
+.required {
+  color: red;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Style for invalid inputs */
+input:invalid {
+  border-color: red;
+}
+
+input:invalid::placeholder {
+  color: red;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .first {
+    padding: 10px;
+  }
+
+  input {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first {
+    padding: 5px;
+  }
+
+  input {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
